@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
-    "module": "CommonJS",
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
-    "baseUrl": "src"
+    "baseUrl": "src",
+    "outDir": "build",
+    "target": "ES6",
+    "module": "CommonJS",
+    "moduleResolution": "Node"
   },
-  "include": ["src/**/*"],
-
+  "include": ["*"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }

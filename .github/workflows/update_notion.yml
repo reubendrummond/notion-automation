@@ -21,6 +21,7 @@ jobs:
          node-version: 16
          cache: 'pnpm'
       - run: pnpm i
+      - run: pnpm run build
       - name: Run script
         run: pnpm run start
         env:
