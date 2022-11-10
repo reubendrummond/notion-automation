@@ -20,8 +20,8 @@ jobs:
         with:
          node-version: 16
          cache: 'pnpm'
-      - run: pnpm install
+      - run: pnpm i
       - name: Run script
-        run: pnpm start
+        run: pnpm run start
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
