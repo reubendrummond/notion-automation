@@ -19,8 +19,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
          node-version: 16
-         cache: 'pnpm'
-         cache-dependency-path: './package-lock.json'
       - run: pnpm i
       - run: pnpm run build
       - name: Run script
