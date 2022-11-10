@@ -1,0 +1,13 @@
+name: Update Notion
+
+on:
+  # Triggers the workflow every 5 minutes
+  schedule:
+    - cron: "*/5 * * * *"
+
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run script
+        run: pnpm run start
